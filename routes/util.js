@@ -3,6 +3,6 @@ const utilController = require('../controllers/util')
 
 const router = express.Router()
 
-router.get('/fibo/:n', utilController.fibbo)
+router.get('/fibo/:n', utilController.fibo)
 
 module.exports = router

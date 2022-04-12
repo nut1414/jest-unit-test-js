@@ -1,9 +1,9 @@
-const fibbonacci = require('../utils/fibbo.js')
+const fibonacci = require('../utils/fibo.js')
 
-const fibbo = (req, res) => {
+const fibo = (req, res) => {
   try {
     if (req.params.n > 102) throw Error('number too large')
-    const result = { status: 'success', result: fibbonacci(req.params.n) }
+    const result = { status: 'success', result: fibonacci(req.params.n) }
     console.log(result)
     res.json(result)
   } catch (e) {
@@ -12,5 +12,5 @@ const fibbo = (req, res) => {
 }
 
 module.exports = {
-  fibbo
+  fibo
 }

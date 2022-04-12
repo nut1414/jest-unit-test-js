@@ -1,4 +1,4 @@
-const fibbo = (n) => {
+const fibo = (n) => {
   let a = 1
   let b = 1
   let c = a
@@ -10,4 +10,4 @@ const fibbo = (n) => {
   return a
 }
 
-module.exports = fibbo
+module.exports = fibo
